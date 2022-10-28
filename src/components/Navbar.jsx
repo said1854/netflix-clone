@@ -1,10 +1,10 @@
-import { async } from "@firebase/util";
 import { Link, useNavigate } from "react-router-dom";
 import { UserAuth } from "../context/AuthContext";
 
 const Nabvar = () => {
   const { user, logOut } = UserAuth();
   const navigate = useNavigate();
+
   const handleLogout = async () => {
     try {
       await logOut();
@@ -15,7 +15,7 @@ const Nabvar = () => {
   };
 
   return (
-    <div className="flex fixed justify-between p-4 z-[100] opacity-70 bg-black/80 w-full">
+    <div className="flex relative justify-between p-4 z-[100] opacity-70 bg-black/80 w-full">
       <Link to="/">
         <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
           SAIDFLIX
@@ -26,12 +26,14 @@ const Nabvar = () => {
           <Link to="/account">
             <button className="text-white pr-4"> Account</button>
           </Link>
-          <button
-            onClick={handleLogout}
-            className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white"
-          >
-            Logout
-          </button>
+          <Link to="/">
+            <button
+              onClick={handleLogout}
+              className="bg-red-600 px-6 py-2 rounded cursor-pointer text-white"
+            >
+              Logout
+            </button>
+          </Link>
         </div>
       ) : (
         <div>

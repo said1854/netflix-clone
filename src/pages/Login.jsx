@@ -31,9 +31,9 @@ const Login = () => {
         />
         <div className="bg-black/60 fixed top-0 w-full h-screen"></div>
         <div className="fixed w-full px-4 py-24 z-50">
-          <div className="max-w-[450px] h-[600px] mx-auto bg-black/75 text-white">
+          <div className="max-w-[450px] h-[600px] mx-auto bg-black/75 ">
             <div className="max-w-[320px] mx-auto py-16">
-              <h1 className="text-3xl font-bold">Sign In</h1>
+              <h1 className="text-3xl font-bold text-white">Sign In</h1>
               {error ? <p className="p-3 bg-red-500 my-2">{error}</p> : null}
               <form
                 onSubmit={handleSubmit}
@@ -58,14 +58,14 @@ const Login = () => {
                 </button>
                 <div className="flex justify-between items-center text-sm text-gray-500">
                   <p>
-                    <input className="mr-2" type="checkbox" />
+                    <input className="mr-2 text-gray-500" type="checkbox" />
                     Remember me
                   </p>
                   <p> Need Help?</p>
                 </div>
                 <p className="py-8">
                   <span className="text-gray-500">New to Saidflix?</span>
-                  <Link className="ml-3" to="/signup">
+                  <Link className="ml-3 text-white" to="/signup">
                     Sign Up
                   </Link>
                 </p>
