@@ -23,7 +23,7 @@ const Signup = () => {
       <div className="w-full h-screen">
         <img
           className="hidden sm:block absolute w-full h-full object-cover"
-          alt=""
+          alt="/"
           src="https://assets.nflxext.com/ffe/siteui/vlv3/79fe83d4-7ef6-4181-9439-46db72599559/bd4f2024-8853-47ee-b84b-779b52fd5f12/TR-en-20221017-popsignuptwoweeks-perspective_alpha_website_large.jpg"
         />
         <div className="bg-black/60 fixed top-0 w-full h-screen"></div>
@@ -63,9 +63,7 @@ const Signup = () => {
                   <span className="text-gray-500">
                     Already Subscribed to Saidflix?
                   </span>
-                  <Link className="ml-3" to="/login">
-                    Sign In
-                  </Link>
+                  <Link to="/login">Sign In</Link>
                 </p>
               </form>
             </div>
@@ -77,3 +75,4 @@ const Signup = () => {
 };
 
 export default Signup;
+

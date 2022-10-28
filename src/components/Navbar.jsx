@@ -15,7 +15,7 @@ const Nabvar = () => {
   };
 
   return (
-    <div className="flex relative justify-between p-4 z-[100] opacity-70 bg-black/80 w-full">
+    <div className="flex fixed justify-between p-4 z-[100] opacity-70 bg-black/80 w-full">
       <Link to="/">
         <h1 className="text-red-600 text-4xl font-bold cursor-pointer">
           SAIDFLIX
